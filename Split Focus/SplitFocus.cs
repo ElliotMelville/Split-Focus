@@ -221,5 +221,12 @@ namespace Split_Focus
             Hide();
             highscores.ShowDialog();
         }
+
+        private void hbtnHTP_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("When you start, you will see targets appear on the screen. \n" +
+                "Click the targets as fast as possible to get a lower score! (a lower score is better) However... Do not hit the bombs! If you hit a bomb it will add one-hundred points to your score, as does missing a target. \n" +
+                "Have fun, and good luck!");
+        }
     }
 }

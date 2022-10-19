@@ -198,6 +198,7 @@ namespace Split_Focus
             this.hbtnHTP.Speed = 10;
             this.hbtnHTP.TabIndex = 6;
             this.hbtnHTP.UseVisualStyleBackColor = false;
+            this.hbtnHTP.Click += new System.EventHandler(this.hbtnHTP_Click);
             // 
             // hbtnStart
             // 
