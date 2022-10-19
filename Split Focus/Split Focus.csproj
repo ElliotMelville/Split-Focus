@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>target.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -46,16 +49,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="FormHighscores.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="FormHighscores.Designer.cs">
+      <DependentUpon>FormHighscores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HighScores.cs" />
+    <Compile Include="HoverButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SplitFocus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplitFocus.Designer.cs">
+      <DependentUpon>SplitFocus.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="TargetBar.cs" />
+    <EmbeddedResource Include="FormHighscores.resx">
+      <DependentUpon>FormHighscores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplitFocus.resx">
+      <DependentUpon>SplitFocus.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -65,6 +82,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -78,6 +96,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Title.png" />
+    <None Include="Resources\export202210081916313360.png" />
+    <None Include="Resources\bomb2.png" />
+    <None Include="Resources\bomb1.png" />
+    <None Include="Resources\bomb.png" />
+    <None Include="Resources\target.png" />
+    <None Include="Resources\Untitled.png" />
+    <None Include="Resources\Progress.png" />
+    <None Include="Resources\progressbar.png" />
+    <Content Include="target.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
