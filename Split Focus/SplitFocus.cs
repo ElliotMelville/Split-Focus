@@ -218,6 +218,7 @@ namespace Split_Focus
             this.Controls.Remove(bomb);
 
             FormHighscores highscores = new FormHighscores(name, score, hitRate);
+            Hide();
             highscores.ShowDialog();
         }
     }

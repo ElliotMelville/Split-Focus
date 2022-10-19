@@ -87,11 +87,10 @@ namespace Split_Focus
             // 
             // lblMessage
             // 
-            this.lblMessage.AutoSize = true;
             this.lblMessage.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMessage.Location = new System.Drawing.Point(74, 380);
+            this.lblMessage.Location = new System.Drawing.Point(74, 302);
             this.lblMessage.Name = "lblMessage";
-            this.lblMessage.Size = new System.Drawing.Size(57, 23);
+            this.lblMessage.Size = new System.Drawing.Size(356, 139);
             this.lblMessage.TabIndex = 6;
             this.lblMessage.Text = "label7";
             // 
